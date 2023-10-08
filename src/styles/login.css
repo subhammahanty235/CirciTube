@@ -1,0 +1,32 @@
+.loginScreen{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    /* background-color: blanchedalmond; */
+}
+.loginScreen .left_part{
+    width: 70%;
+    height: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.loginScreen .left_part img{
+    width: 80%;
+    height: 100%;
+}
+
+.loginScreen .right_part{
+    width: 30%;
+    height: 100%;
+    background-color: plum;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginScreen .right_part h3{
+    color: #fff;
+}
