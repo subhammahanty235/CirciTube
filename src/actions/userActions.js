@@ -1,5 +1,4 @@
 import axios from "axios";
-import { userReducer } from "../reducers/userReducer";
 const url = "http://localhost:5000"
 const token = localStorage.getItem("authToken")
 export const googleLogin = (data) => async (dispatch) => {
