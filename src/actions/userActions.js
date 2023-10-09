@@ -1,6 +1,7 @@
 import axios from "axios";
 import { userReducer } from "../reducers/userReducer";
 const url = "http://localhost:5000"
+const token = localStorage.getItem("authToken")
 export const googleLogin = (data) => async (dispatch) => {
     try {
         dispatch({ type: "REQUEST_LOGIN_WITH_GOOGLE" })
@@ -30,6 +31,39 @@ export const googleLogin = (data) => async (dispatch) => {
     } catch (error) {
         dispatch({
             type: "REQUEST_LOGIN_WITH_GOOGLE_FAILED",
+            payload: error.response,
+        })
+    }
+}
+
+export const getUserData = ()=> async (dispatch) => {
+    try {
+        dispatch({type:"FETCH_USER_DATA"});
+        console.log(token)
+        const response = await axios.get(`${url}/api/user/get`,
+        {
+            headers: {
+                "Content-Type": "application/json",
+                "token":token
+            },
+        }
+        )
+
+        if(response.data.success === true){
+            dispatch({
+                type:"FETCH_USER_DATA_SUCCESS",
+                payload:response.data
+            })
+        }else{
+            dispatch({
+                type: "FETCH_USER_DATA_FAILED",
+                payload: response.data,
+            })
+        }
+
+    } catch (error) {
+        dispatch({
+            type: "FETCH_USER_DATA_FAILED",
             payload: error.response,
         })
     }

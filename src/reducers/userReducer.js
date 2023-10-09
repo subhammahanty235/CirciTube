@@ -19,4 +19,18 @@ export const userReducer = createReducer(initialState, {
     CLEAN_ERRORS: (state) => {
         state.error = null;
       },
+
+    FETCH_USER_DATA :(state) => {
+        state.loading = true;
+    },
+    FETCH_USER_DATA_SUCCESS: (state ,action) =>{
+        state.loading = false;
+        state.user = action.payload.user;
+        state.authenticatedUser = true;
+    },
+    FETCH_USER_DATA_FAILED: (state ,action) =>{
+        state.loading = false;
+        state.authenticatedUser = false;
+    }
+
 })
