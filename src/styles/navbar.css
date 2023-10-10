@@ -48,6 +48,22 @@ nav{
     cursor: pointer;
     
 }
+.loggedInMenus{
+    display: flex;
+    align-items: center;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid grey;
+    height: 30px;
+    border-radius: 15px;
+
+}
+.profile .username{
+    padding-left:10px ;
+}
 .loginbtn{
     width: 100px;
     padding: 5px 10px;
@@ -55,7 +71,7 @@ nav{
     background-color: transparent;
     font-size: 14px;
     font-weight: 400;
-    display: none;
+    
 }
 
 .profilePic{
