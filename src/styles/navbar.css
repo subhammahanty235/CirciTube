@@ -1,0 +1,67 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    /* width: 100vw; */
+    padding: 0px 20px;
+    /* background-color: aqua; */
+}
+.menus{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    font-size: 20px;
+    font-weight: 700;
+
+}
+.searchbar{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+.searchbar input{
+    width:97%;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    outline: none;
+    
+}
+.searchbar .searchIcon{
+    padding: 5px 5px;
+    height: 20px;
+    width: 20px;
+    color: grey;
+    padding-right: 0;
+    /* background-color: aquamarine; */
+}
+
+.dropDown{
+    height: 15px;
+    width: 15px;
+    align-items: center;
+    padding: 5px;
+    color: "#808080";
+    cursor: pointer;
+    
+}
+.loginbtn{
+    width: 100px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 400;
+    display: none;
+}
+
+.profilePic{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+
