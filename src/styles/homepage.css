@@ -1,0 +1,14 @@
+.homepageSection{
+    max-height: 100vh;
+}
+
+.videosSection {
+    width: 100%;
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
+    scroll-behavior: smooth;
+}

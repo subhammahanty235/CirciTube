@@ -1,0 +1,77 @@
+.videobox{
+    width: 23%;
+    margin: 10px;
+    height: 250px;
+    border-radius: 5px;
+    box-shadow: -6px -6px 30px 2px #0333481A;
+
+    /* background-color: aquamarine; */
+}
+.thumbnail{
+    width: 100%;
+    height: 75%;
+    position: relative;
+}
+.videobox .thumbnail .thumnailImg{
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+
+
+}
+.duration{
+    position: absolute;
+    top: calc(100% - 300px);
+    left: calc(100% - 15%);
+    height: 19px;
+    background-color: black;
+    /* background-color: rgb(52, 50, 50); */
+    padding: 0 5px;
+    text-align: center;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    width: fit-content;
+    /* border-radius: 50px; */
+    opacity: .5;
+/* background: #e0e0e0; */
+box-shadow:  2px 2px 4px #bebebe,
+             -2px -2px 60px #ffffff;
+}
+.videoDetails{
+    padding: 0px 5px;
+}
+.likes-views{
+    display: flex;
+    width: 95%;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 0px 5px; */
+    /* background-colsor: aqua; */
+    /* height: 10px; */
+}
+.icon-view{
+    height: 20px;
+    width: 20px;
+    color: grey;
+}
+.views , .likes{
+    display: flex;
+    align-items: center;
+    color: grey;
+}
+.views  p , .likes p{
+    font-size: 10px;
+    font-weight: 700;
+    
+}
+
+.likes-views p{
+    padding: 0;
+    margin: 0;
+}
+.subject{
+    padding: 0;margin: 0;
+}
